@@ -91,7 +91,7 @@ namespace CustomerManagementSystem.DAL.Migrations
                     b.Property<string>("UserID")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("CustomerId")
+                    b.Property<int?>("CustomerId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("EntryDate")
@@ -436,11 +436,6 @@ namespace CustomerManagementSystem.DAL.Migrations
                 });
 
             modelBuilder.Entity("CustomerManagementSystem.DAL.Customer", b =>
-                {
-                    b.Navigation("CustomerUsers");
-                });
-
-            modelBuilder.Entity("CustomerManagementSystem.DAL.User", b =>
                 {
                     b.Navigation("CustomerUsers");
                 });

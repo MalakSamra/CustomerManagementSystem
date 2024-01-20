@@ -26,5 +26,4 @@ public class Customer
 
     //Navigation Property
     public ICollection<User> users { get; set; } = new HashSet<User>();
-
 }

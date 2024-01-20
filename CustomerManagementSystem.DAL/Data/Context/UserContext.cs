@@ -14,5 +14,4 @@ public class UserContext : IdentityDbContext
     public DbSet<User> users { get; set; }
     public DbSet<Customer_User> customer_user { get; set; }
     public UserContext(DbContextOptions<UserContext> options): base(options) { }
-    
 }

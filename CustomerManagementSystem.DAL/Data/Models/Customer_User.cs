@@ -7,7 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CustomerManagementSystem.DAL;
-//[PrimaryKey(nameof(UserID), nameof(CustomerId))]
+
+[PrimaryKey(nameof(UserID), nameof(CustomerId))]
+
 public class Customer_User
 {
     public string? UserID { get; set; }
